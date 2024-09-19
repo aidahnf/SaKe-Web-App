@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/style/homepage.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>SayangKeluarga</title>
+</head>
+
+<body>
+    <header>
+        <div class="navbar" id="myNav">
+            <a class="logo">SaKe</a>
+            <a href="#beranda" class="active">Beranda</a>
+            <a href="YayasanLogin.html" class="menu">Yayasan</a>
+            <a href="#tentangkami" class="menu">Tentang Kami</a>
+            <a href="" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <button id="loginBtn">
+            <a href="#login" \>Login</a>
+        </button>
+    </header>
+
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <a class="titlelogin">
+                Masuk ke akun&nbsp;<span class="highlight">SayangKeluarga</span>
+            </a>
+            <form>
+                <label for="username">Username</label>
+                <div class="userbox">
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <label for="password">Kata Sandi</label>
+                <div class="userbox">
+                    <input type="password" id="password" name="password" required>
+                    <span class="password-toggle-icon"><i class="fas fa-eye"></i></span>
+                </div>
+                <div class="textregister">
+                    <a>Akun belum terdaftar?</a>
+                    <a id="registerBtn" class="daftar" href="">Daftar Sekarang</a>
+                </div>
+                <button  class="masuk" type="submit"> <a href="homepagelogin.html">Masuk</a></button>
+            </form>
+        </div>
+    </div>
+
+    <div id="registerModal" class="modal2">
+        <div class="modal2-content">
+            <span class="close">&times;</span>
+            <a class="titleregister">
+                Membuat akun&nbsp;<span class="highlight">SayangKeluarga</span>
+            </a>
+            <form>
+
+                <div class="namabox">
+                    <a>Nama Lengkap</a>
+                    <input type="text" id="uname" name="uname" required>
+                </div>
+
+                <div class="genderbox">
+                    <a>Jenis Kelamin</a>
+                    <select id="gender" name="gender">
+                        <option value="laki-laki">Laki-laki</option>
+                        <option value="perempuan">Perempuan</option>
+                    </select>
+                </div>
+
+                <div class="datebox">
+                    <a>Tanggal Lahir</a>
+                    <input type="date" id="date" name="date">
+                </div>
+
+                <div class="nikbox">
+                    <a>NIK</a>
+                    <input type="text" id="nik" name="nik" required>
+                </div>
+
+                <div class="kotakabupatenbox">
+                    <a>Kota/Kabupaten</a>
+                    <input type="text" id="kotakabupaten" name="kotakabupaten" required>
+                </div>
+
+                <div class="alamatbox">
+                    <a>Alamat</a>
+                    <input type="text" id="alamat" name="alamat" required>
+                </div>
+
+                <div class="linedivider"></div>
+
+                <div class="emailbox">
+                    <a>Email</a>
+                    <input type="text" id="email" name="email" required>
+                </div>
+
+                <div class="numberbox">
+                    <a>Nomor telepon</a>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+
+                <div class="passwordbox">
+                    <a>Buat Kata Sandi</a>
+                    <input type="password" id="pass" name="pass" required>
+                </div>
+
+
+                <div class="textlogin">
+                    <a>Sudah ada akun?</a>
+                    <a id="loginBtn2" class="logintext"href="">Masuk Sekarang</a>
+                </div>
+                <button class="daftar2" type="submit"><a href="homepagelogin.html">Daftar</a></button>
+            </form>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="banner">
+            <section class="swipecontent">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="/images/Rectangle 3.png" alt=""></div>
+                        <div class="swiper-slide"><img src="/images/orangsakit.png" alt=""></div>
+                        <div class="swiper-slide"><img src="/images/semimedis.png" alt=""></div>
+                        <div class="swiper-slide"><img src="/images/lansiaindex.png" alt=""></div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+        
+            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        
+            <script>
+                var swiper = new Swiper(".mySwiper", {
+                    cssMode: true,
+                    navigation: {
+                        nextEl: ".swiper-button-next",
+                        prevEl: ".swiper-button-prev",
+                    },
+                    pagination: {
+                        el: ".swiper-pagination",
+                    },
+                    mousewheel: true,
+                    keyboard: true,
+                });
+            </script>
+        </div>
+
+        <div class="yayasan">
+            <div class="yayasantext">
+                <div class="yayasantextcontent">
+                    <a>Temukan Yayasan Terpercaya di Sake!</a><br>
+                    Anda akan mendapatkan akses ke pelayanan dari yayasan perawat yang terbaik di Indonesia. Kami telah
+                    menjalin kerjasama dengan yayasan-yayasan yang terkemuka dan terpercaya, memastikan bahwa setiap
+                    klien mendapatkan perawatan yang berkualitas tinggi.
+                </div>
+                <img src="/images/nanny1.png" alt="">
+            </div>
+            <div class="yayasancontent">
+                <div class="ycontent1">
+                    <img id="logo1" src="/images/insanmedika.jpg" alt="">
+                    <div class="yc1text">
+                        <div class="yc1text1">Insan Medika</div>
+                        <div class="yc1text2"> Pengasuh Lansia </div>
+                        <div class="yc1info">
+                            <div class="rating1">
+                                <img src="/images/Vector.png" alt="">
+                                <a>4.7</a>
+                            </div>
+                            <div class="lokasi1">
+                                <img src="/images/vectorrr.png" alt="">
+                                <a>Jakarta Selatan</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ycontent1">
+                    <img id="logo2" src="/images/Capten-Care-Logo-Low-px.jpg" alt="">
+                    <div class="yc1text">
+                        <div class="yc1text1">Capten Care</div>
+                        <div class="yc1text2"> Pengasuh Lansia </div>
+                        <div class="yc1info">
+                            <div class="rating1">
+                                <img src="/images/Vector.png" alt="">
+                                <a>4.2</a>
+                            </div>
+                            <div class="lokasi1">
+                                <img src="/images/vectorrr.png" alt="">
+                                <a>Jakarta Selatan</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ycontent1">
+                    <img id="logo3" src="/images/new-logo.png" alt="">
+                    <div class="yc1text">
+                        <div class="yc1text1">Nanny Care</div>
+                        <div class="yc3text2"> Pengasuh Anak </div>
+                        <div class="yc1info">
+                            <div class="rating1">
+                                <img src="/images/Vector.png" alt="">
+                                <a>4.9</a>
+                            </div>
+                            <div class="lokasi1">
+                                <img src="/images/vectorrr.png" alt="">
+                                <a>Bogor</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="yayasanmelihat">
+                <form action="YayasanLogin.html">
+                    <button type="submit">Melihat selengkapnya</button>
+                </form>
+            </div>
+            
+        </div>
+
+        <div class="tentangkami">
+            <div class="headertentangkami">Mengapa Memilih Kami ?</div>
+            <div class="tentangkamicontent">
+                <div class="content1">
+                    <img src="/images/contract_icon-removebg-preview.png" alt="">
+                    <div class="textcontent1">Memiliki sistem kontrak yang menjamin kesepakatan sah antara Yayasan dan
+                        Klien</div>
+                </div>
+                <div class="content1">
+                    <img src="/images/trophy-removebg-preview.png" alt="">
+                    <div class="textcontent1">Kerjasama dengan Yayasan-Yayasan Terkemuka di Indonesia yang Diakui dan
+                        Terpercaya</div>
+                </div>
+                <div class="content1">
+                    <img src="/images/document-removebg-preview.png" alt="">
+                    <div class="textcontent1">Menyediakan informasi lengkap mengenai Yayasan, memudahkan Anda dalam
+                        memilih dengan bijaksana</div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="footer">
+            <div class="desc"><a>Sayang Keluarga</a>
+                <div class="text">Melalui platform kami, Anda dapat menemukan informasi lengkap mengenai setiap yayasan,
+                    termasuk reputasi, layanan yang disediakan, dan ulasan dari klien sebelumnya.</div>
+            </div>
+            <div class="explore"><a>Explore</a>
+                <div class="footerLink">
+                    <a class="linkcontent" href="homepage.html">Beranda</a>
+                    <a class="linkcontent" href="YayasanLogin.html">Yayasan</a>
+                    <a class="linkcontent" href="">Tentang Kami</a>
+                </div>
+            </div>
+            <div class="layanankami"><a>Layanan Kami</a>
+                <div class="layanankamicontent">
+                    <div class="info">Perawat Lansia</div>
+                    <div class="info">Pengasuh Anak</div>
+                </div>
+            </div>
+            <div class="kontak"><a>Kontak</a>
+                <div class="isikontak">
+                    <img src="/images/mail.png" alt="" class="mail">
+                    <div class="gmail" href="contact@sayangkeluarga@gmail.com">contact@sayangkeluarga@gmail.com</div>
+                </div>
+            </div>
+            <div class="copyright">
+                <img class="imgcopyr" src="/images/Line 2.png" alt="">
+                <a class="copyr">©2024</a>
+                <a class="copyr">Terms of Service</a>
+                <a class="copyr">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/script/script.js"></script>
+</body>

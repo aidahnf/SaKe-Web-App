@@ -1,0 +1,515 @@
+@font-face {
+    font-family: 'Outfit';
+    src: url(fontsused/Outfit-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Outfit Medium';
+    src: url(fontsused/Outfit-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'Outfit Light';
+    src: url(fontsused/Outfit-Light.ttf);
+}
+@font-face {
+    font-family: 'Raleway Bold';
+    src: url(fontsused/Raleway-Bold.ttf);
+}
+@font-face {
+    font-family: 'Raleway Semi Bold';
+    src: url(fontsused/Raleway-SemiBold.ttf);
+}
+@font-face {
+    font-family: 'Poppins Bold';
+    src: url(fontsused/Poppins-Bold.ttf);
+}
+@font-face {
+    font-family: 'Poppins ';
+    src: url(fontsused/Poppins-Regular.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Outfit';
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    background: white;
+    padding: 1.08rem 5.1%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #0287E4;
+}
+
+.logo {
+    font-size: 25px;
+    font-family: 'Outfit';
+    color: #008DFF;
+}
+
+.navbar {
+    display: flex;
+    gap: 5.5rem; /* Space between links */
+    padding-left: 7.1%;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #0287E4;
+    font-size: 20px;
+    font-family: 'Outfit Medium';
+    
+}
+
+.navbar a:hover{
+    opacity: 0.5; 
+}
+
+header .icons i{
+    cursor: pointer;
+    margin-left: 5rem;
+    height: 4.5rem;
+    line-height: 4.5rem;
+    width: 4.5rem;
+    text-align: center;
+    font-size: 1.7rem;
+    color: var(--black);
+    border-radius: 50%;
+    background: #000000;
+}
+
+header .icons i:hover{
+    color: #000000;
+    background: var(--cream);
+    transform: rotate(360deg);
+}
+
+header .icons #bars{
+    display: none;
+}
+
+
+.profile .text{
+    text-decoration: none;
+    color: #0287E4;
+    font-size: 15px;
+    font-family: 'Outfit Medium';
+    /* opacity: 50%; */
+}
+
+.account {
+    width: 34px; 
+    height: 34px; 
+    border-radius: 50%; 
+    border: 3px solid #0287E4;
+}
+
+.account:hover{
+    opacity: 50%;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; /* Space between links */
+    padding-left: 33%;
+}
+
+.profile .icon{
+    width: 20px; 
+    height: 20px;  
+    /* opacity: 50%; */
+}
+
+header .navbar .icon {
+    display: none;
+}
+
+
+header a {
+    text-decoration: none; 
+    color: inherit; 
+}
+
+.profile button{
+    color: #0287E4;
+    border: none;
+    background-color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    font-family: 'Raleway';
+}
+
+
+.navbar a.menu:hover {
+    opacity: 0.5;
+}
+
+.navbar a.active {
+    color: rgba(2, 135, 228, 0.5);
+}
+
+.active {
+    color: rgba(2, 135, 228, 0.5);
+}
+
+
+
+.swipecontent {
+    z-index: 1;
+    display: block;
+    float: none;
+}
+
+.swiper {
+    float: none !important;
+    width: 80%;
+    height: 80%;
+    margin: 100px;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    float: none;
+    height: 100%;
+    border-radius: 20px;
+    /* object-fit: cover; */
+}
+
+@media screen and (max-width: 814px) {
+    header {
+        padding: 1rem 2%;
+    }
+
+    .navbar a:not(:first-child) {
+        display: none;
+    }
+
+    .navbar a.icon {
+        display: block;
+    }
+
+    .navbar.responsive {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding-right: 0;
+    }
+
+    .navbar.responsive a {
+        font-size: 18px;
+        padding: 0.5rem 0;
+        text-align: center;
+    }
+
+    button {
+        display: none;
+    }
+}
+
+.content {
+    /* display: flex; */
+    margin-top: 130px;
+}
+
+.yayasan {
+    font-family: 'Outfit' ;
+    border: solid #C3E3FD;
+    border-radius: 20px;
+    background-color: #C3E3FD;
+}
+
+.yayasantext {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 45px;
+    display: flex;
+}
+
+.yayasantext a {
+    font-size: 45px;
+    font-weight: bold;
+    color: #0287E4;
+}
+
+.yayasantextcontent {
+    color: #595151;
+    width: 1060px;
+    font-size: 25px;
+}
+
+.yayasantext img {
+    display: block;
+    margin-left: 100px;
+}
+
+.yayasancontent {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ycontent1 {
+    background-color: #fff;
+    width: 401px;
+    height: 350px;
+    border-radius: 30px;
+    /* margin-bottom: 65px; */
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#logo1 {
+    margin-top: 22px;
+    margin-left: 55px;
+}
+
+#logo2 {
+    margin-top: 22px;
+    margin-left: 55px;
+    width: 300px;
+    height: 180px;
+}
+
+#logo3 {
+    margin-top: 22px;
+    margin-left: 120px;
+    width: 180px;
+    height: 180px;
+}
+
+.yc1text {
+    margin-left: 28px;
+    margin-right: 32px;
+}
+
+.yc1text1 {
+    font-size: 30px;
+}
+
+.ycontent1:hover{
+    opacity: 50%;
+}
+
+.yc1text2 {
+    background-color: #008DFF;
+    color: #fff;
+    text-align: center;
+    width: 40%;
+    border-radius: 7px;
+    margin-top: 5px;
+    font-size: 15px;
+}
+.yc3text2 {
+    background-color: #FF00C7;
+    color: #fff;
+    text-align: center;
+    width: 40%;
+    border-radius: 7px;
+    margin-top: 5px;
+}
+
+.yc1info {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 0px;
+    margin-top: 30px;
+    font-size: 20px;
+    color: #757070;
+}
+
+.yayasanmelihat button {
+    background: none;
+    border: none;
+    color: #0287E4;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: right;
+    margin-bottom: 27px;
+    margin-left: 1080px;
+    margin-top: 10px;
+    text-align: right;
+    margin-right: 51px;
+    white-space: nowrap;
+}
+
+
+.yayasanmelihat:hover{
+    opacity: 50%;
+}
+
+.tentangkami {
+    font-family: 'Outfit' ;
+    display: block;
+    align-items: center;
+    margin-bottom: 100px;
+    margin-top: 80px;
+}
+
+.headertentangkami {
+    font-weight: bold;
+    font-size: 45px;
+    color: #0287E4;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.tentangkamicontent {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.content1 {
+    justify-content: center;
+    display: block;
+    margin-left: 129px;
+    margin-right: 129px;
+}
+
+.content1 img {
+    width: 236px;
+    height: 200px;
+    display: block;
+    border: 2px solid #C3E3FD;
+    background-color: #C3E3FD;
+    border-radius: 50%;
+    margin-left: 12px;
+}
+
+.content1 .textcontent1 {
+    width: 252px;
+    text-align: center;
+    border: 5px solid #C3E3FD;
+    color: #757070;
+    border-radius: 25px;
+    font-size: 15px;
+}
+
+
+.footer {
+    font-family: 'Outfit' ;
+    position: relative;
+    background-color: #008DFF;
+    height: 400px;
+    color: #fff;
+    font-size: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.desc {
+    display: block;
+    margin-left: 70px;
+    margin-top: 40px;
+}
+
+.desc a {
+    font-size: 25px !important;
+    font-weight: bold;
+}
+
+.desc .text {
+    width: 400px;
+    margin-top: 36px !important;
+    font-size: 20px;
+}
+
+.explore {
+    margin-top: 40px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.footerLink {
+    display: block;
+    margin-top: 25px;
+}
+
+.linkcontent {
+    display: block;
+    font-size: 20px;
+    font-weight: normal;
+    text-decoration: none;
+    color: white;
+}
+
+.layanankami {
+    margin-top: 40px;
+}
+
+.layanankami a {
+    font-size: 25px !important;
+    font-weight: bold;
+}
+
+.layanankamicontent {
+    margin-top: 25px;
+}
+
+.layanankami .info {
+    display: block;
+    font-size: 20px;
+}
+
+.kontak {
+    margin-top: 40px;
+    margin-right: 70px;
+}
+
+.kontak a {
+    font-size: 25px !important;
+    font-weight: bold;
+}
+
+.mail {
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.isikontak {
+    display: flex;
+    justify-content: space-between;
+    font-weight: normal;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.copyright {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    font-size: 15px;
+}
+
+.imgcopyr {
+    position: absolute;
+    bottom: 60px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}

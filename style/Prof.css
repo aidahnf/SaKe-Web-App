@@ -1,0 +1,776 @@
+
+
+@font-face {
+    font-family: 'Outfit';
+    src: url(fontsused/Outfit-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Outfit Medium';
+    src: url(fontsused/Outfit-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'Outfit Light';
+    src: url(fontsused/Outfit-Light.ttf);
+}
+@font-face {
+    font-family: 'Raleway Bold';
+    src: url(fontsused/Raleway-Bold.ttf);
+}
+@font-face {
+    font-family: 'Raleway Semi Bold';
+    src: url(fontsused/Raleway-SemiBold.ttf);
+}
+@font-face {
+    font-family: 'Poppins Bold';
+    src: url(fontsused/Poppins-Bold.ttf);
+}
+@font-face {
+    font-family: 'Poppins ';
+    src: url(fontsused/Poppins-Regular.ttf);
+}
+
+
+* {
+    margin: 0;
+    font-family: 'outfit';
+}
+
+body {
+    background-color: #ffffff;
+    overflow: auto;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    background: white;
+    padding: 1.08rem 5.1%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #0287E4;
+}
+
+a{
+  text-decoration: none;  
+}
+
+.logo {
+    font-size: 25px;
+    font-family: 'Outfit';
+    color: #008DFF;
+}
+
+.navbar {
+    display: flex;
+    gap: 5.5rem; /* Space between links */
+    padding-left: 7.1%;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #0287E4;
+    font-size: 20px;
+    font-family: 'Outfit Medium';
+    
+}
+
+.navbar a:hover{
+    opacity: 0.5; 
+}
+
+header .icons i{
+    cursor: pointer;
+    margin-left: 5rem;
+    height: 4.5rem;
+    line-height: 4.5rem;
+    width: 4.5rem;
+    text-align: center;
+    font-size: 1.7rem;
+    color: var(--black);
+    border-radius: 50%;
+    background: #000000;
+}
+
+header .icons i:hover{
+    color: #000000;
+    background: var(--cream);
+    transform: rotate(360deg);
+}
+
+header .icons #bars{
+    display: none;
+}
+
+
+.profile .text{
+    text-decoration: none;
+    color: #0287E4;
+    font-size: 15px;
+    font-family: 'Outfit Medium';
+    /* opacity: 50%; */
+}
+
+.account {
+    width: 34px; 
+    height: 34px; 
+    border-radius: 50%; 
+    border: 3px solid #0287E4;
+}
+
+.account:hover{
+    opacity: 50%;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; /* Space between links */
+    padding-left: 33%;
+}
+
+.profile .icon{
+    width: 20px; 
+    height: 20px;  
+    /* opacity: 50%; */
+}
+
+header .navbar .icon {
+    display: none;
+}
+
+
+header a {
+    text-decoration: none; 
+    color: inherit; 
+}
+
+.profile button{
+    color: #0287E4;
+    border: none;
+    background-color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    font-family: 'Raleway';
+}
+
+.main {
+    margin-top: 2%;
+    margin-left: 13.5%;
+    font-size: 28px;
+    padding: 120px;
+    width: 58%;
+    overflow: hidden; /* Clear the float */
+}
+
+.profile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-header h2 {
+    color: #0287E4;
+    font-family: 'Raleway Semi Bold';
+    font-size: 30px;
+    /* margin-bottom: 100px; */
+    float: left; /* Float the heading to the left */
+    margin-right: 20px; /* Add some spacing between the heading and the button */
+}
+
+.navbar a.menu:hover {
+    opacity: 0.5;
+}
+
+.navbar a.active {
+    color: rgba(2, 135, 228, 0.5);
+}
+
+.active {
+    color: rgba(2, 135, 228, 0.5);
+}
+
+.main .profile-header button {
+    float: right; /* Float the button to the right */
+    color: #0287E4;
+    background-color: #fff;
+    border-color: #0287E4;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 5px;
+    width: 100px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    /* margin-left: auto; */
+}
+
+
+.main .changes h2{
+    color: #000;
+    font-size: 20px;
+    
+}
+
+.main h1{
+    font-family: 'Raleway Semi Bold';
+}
+.main p {
+    color: #686868;
+}
+
+.main button a {
+    text-decoration: none; 
+    color: inherit; 
+}
+
+.main button:hover {
+    opacity: 0.5; 
+}
+
+
+.main .card {
+    background-color: #fff;
+    border-radius: 18px;
+    box-shadow: 1px 1px 8px 0 grey;
+    height: auto;
+    margin-top: 15px;
+    padding: 20px 0 3px 50px;
+}
+
+
+.identity-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.identity-container img {
+    margin-right: 60px; /* Tambahkan jarak antara gambar dan teks */
+    /* width: 100px; */
+}
+
+.identity-info h1{
+    margin: 0; /* Hilangkan margin default */
+    /* margin-left: 100%; */
+    font-size: 30px;
+    font-family: "Raleway Semi Bold";
+}
+.identity-info p {
+    margin: 0;
+    font-size: 16px;
+
+}
+
+table {
+    border-collapse: collapse;
+    margin-left: 50px;
+    margin-bottom: 100px;
+    border: none;
+    font-size: 16px;
+    height: 270px;
+    width: 80%;
+}
+tr {
+    border-bottom: 2px solid #000; 
+}
+td {
+    padding: 8px;
+    margin-left: 1000px;
+}
+td p{
+    /* text-align: left; */
+    margin-left: 200px;
+}
+
+
+/*                             START MODAL PROFILE                              */
+
+
+#search-form #close{
+    position: absolute;
+    color: #b4b2b2;
+    cursor: pointer;
+    top: 11px;
+    right: 12px;
+    font-size: 28px;
+    font-weight: bold;
+}
+#search-form #close:hover, #search-form #close:focus{
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 3;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 60px;
+    font-family: 'Outfit', sans-serif;
+}
+
+.changes {
+    width: 400px;
+    padding: 15px;
+    background-color: #fefefe;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+    z-index: 3;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 552px;
+    animation: fadeIn 0.5s;
+}
+
+.changes h2{
+    text-align: center;
+    margin-bottom: 5px;
+    }
+
+    .changes img{
+        /* align-items: center; */
+        width: 100px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+    }
+
+    .changes a{
+        text-align: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+        text-decoration: none;
+        font-size: 10px;
+    }
+
+    .changes input[type="text"]{
+        /* width: 115px; */
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        align-items: center;
+        /* margin-bottom: 25px; */
+    }
+    .changes input[type="date"]{
+        margin-left: 14px;
+        width: 275px;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    .changes select{
+        margin-left: 14px;
+        width: 298px;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .changes textarea{
+        resize: none;
+        margin-left: 52px;
+        width: 275px;
+        padding: 10px;
+        margin-bottom: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .changes .acc button {
+        background-color: #0080ff;
+        color: #fff;
+        border: none;
+        width: 100px;
+        padding: 8px ;
+        border-radius: 5px;
+        cursor: pointer;
+        align-items: center;
+        margin: 7px 160px;
+        text-align: center;
+    }
+    .changes .acc button:hover{
+        background-color: #0080ff;
+        opacity: 0.5;
+    }
+    .name {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    }
+
+    .name label {
+    /* width: 150px;  */
+    margin-right: 10px; 
+    }
+
+    .name input {
+    flex: 1; /* membuat input mengisi sisa ruang */
+    }
+
+    .nik input{
+        flex: 1 ;
+        margin-left: 76px;
+        width: 275px;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    
+    
+    }
+    .email input{
+        flex: 1 ;
+        margin-left: 64px;
+        width: 275px;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+
+  
+    .changes button{
+        background-color: #979797;
+        color: #ffffff;
+        border: none;
+        width: 60px;
+        padding: 10px;
+        border-radius: 5px;
+        /* cursor: pointer; */
+        align-items: center;
+        margin-left: 5px;
+    }
+
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+    
+        to {
+            opacity: 1;
+        }
+    }
+
+
+
+.footer {
+    font-family: 'Outfit', sans-serif;
+    position: relative;
+    background-color: #008DFF;
+    height: 400px;
+    color: #fff;
+    font-size: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.desc {
+    display: block;
+    margin-left: 70px;
+    margin-top: 40px;
+}
+
+.desc a {
+    font-size: 25px !important;
+    font-weight: bold;
+}
+
+.desc .text {
+    width: 400px;
+    margin-top: 36px !important;
+    font-size: 20px;
+}
+
+.explore {
+    text-decoration: none;
+    margin-top: 40px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.explore a{
+    color: #fff;
+    text-decoration: none;  
+  }
+
+.footerLink {
+    display: block;
+    margin-top: 25px;
+}
+
+.linkcontent {
+    display: block;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.layanankami {
+    margin-top: 40px;
+}
+
+.layanankami a {
+    font-size: 25px !important;
+    font-weight: bold;
+}
+
+.layanankamicontent {
+    margin-top: 25px;
+}
+
+.layanankami .info {
+    display: block;
+    font-size: 20px;
+}
+
+.kontak {
+    margin-top: 40px;
+    margin-right: 70px;
+}
+
+.kontak a {
+    font-size: 25px !important;
+    font-weight: bold;
+}
+
+.mail {
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.isikontak {
+    display: flex;
+    justify-content: space-between;
+    font-weight: normal;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.copyright {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    font-size: 15px;
+}
+
+.imgcopyr {
+    position: absolute;
+    bottom: 60px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+/* media queries */
+
+@media(max-width:991px){
+
+    html{
+        font-size: 55%;
+
+    }
+    header{
+        padding: 1rem 2rem;
+    }
+
+    section{
+        padding: 2rem;
+    }
+
+   
+}
+
+@media(max-width:768px){
+    header .icons #bars{
+        display: inline-block;
+    }
+
+    header .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #fff;
+        border-top: .1rem solid rgba(0,0,0,.2);
+        border-bottom: .1rem solid rgba(0,0,0,.2);
+        padding: 1rem;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        display: none; /* Awalnya disembunyikan */
+    }
+
+    header .navbar.active{
+        display: block; /* Tampilkan saat class 'active' ditambahkan */
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    header .navbar a{
+        display: block;
+        padding: 1.5rem;
+        margin: 1rem;
+        font-size: 2rem;
+        background: #eee;
+    }
+
+    
+.main {
+    margin-top: 2%;
+    margin-left: 13.5%;
+    font-size: 28px;
+    padding: 120px;
+    width: 58%;
+    overflow: hidden; /* Clear the float */
+}
+
+.profile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-header h2 {
+    color: #0287E4;
+    font-family: 'Raleway Semi Bold';
+    font-size: 30px;
+    /* margin-bottom: 100px; */
+    float: left; /* Float the heading to the left */
+    margin-right: 20px; /* Add some spacing between the heading and the button */
+}
+
+
+
+.main .profile-header button {
+    float: right; /* Float the button to the right */
+    color: #0287E4;
+    background-color: #fff;
+    border-color: #0287E4;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 5px;
+    width: 100px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    /* margin-left: auto; */
+}
+
+
+.main .changes h2{
+    color: #000;
+    font-size: 20px;
+    
+}
+
+.main h1{
+    font-family: 'Raleway Semi Bold';
+}
+.main p {
+    color: #686868;
+}
+
+.main button a {
+    text-decoration: none; 
+    color: inherit; 
+}
+
+.main button:hover {
+    opacity: 0.5; 
+}
+
+
+.main .card {
+    background-color: #fff;
+    border-radius: 18px;
+    box-shadow: 1px 1px 8px 0 grey;
+    height: auto;
+    margin-top: 15px;
+    padding: 20px 0 3px 50px;
+}
+
+
+.identity-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.identity-container img {
+    margin-right: 60px; /* Tambahkan jarak antara gambar dan teks */
+    /* width: 100px; */
+}
+
+.identity-info h1{
+    margin: 0; /* Hilangkan margin default */
+    /* margin-left: 100%; */
+    font-size: 30px;
+    font-family: "Raleway Semi Bold";
+}
+.identity-info p {
+    margin: 0;
+    font-size: 16px;
+
+}
+
+table {
+    border-collapse: collapse;
+    margin-left: 50px;
+    margin-bottom: 100px;
+    border: none;
+    font-size: 16px;
+    height: 270px;
+    width: 80%;
+}
+tr {
+    border-bottom: 2px solid #000; 
+}
+td {
+    padding: 8px;
+    margin-left: 1000px;
+}
+td p{
+    /* text-align: left; */
+    margin-left: 200px;
+}
+
+}
+
+
+
+@media(max-width:991px){
+
+    html{font-size: 50%;
+
+    }
+   
+
+   
+}
+

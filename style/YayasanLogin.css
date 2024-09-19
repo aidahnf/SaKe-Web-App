@@ -1,0 +1,1053 @@
+@font-face {
+    font-family: 'Outfit';
+    src: url(fontsused/Outfit-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Outfit Medium';
+    src: url(fontsused/Outfit-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'Outfit Light';
+    src: url(fontsused/Outfit-Light.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'outfit';
+}
+
+
+section{
+    padding: 2rem 9% ;
+}
+
+.Home-Info {
+    text-align: center;
+    padding: 20px;
+}
+
+.Home-Info h1{
+    text-align: center;
+}
+
+.Home-Info p{
+    text-align: center;
+    padding: 10px;
+    display: inline-block;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.sub-heading1{
+    color:#0287E4;
+    text-align:left;
+    font-size: 2rem;
+    padding-top: 1rem;
+
+}
+
+p{
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+body{
+    background-color: white; 
+}
+
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    padding: 1.3rem 5.1%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #0287E4; 
+    z-index: 2;
+
+}
+
+.logo {
+    font-size: 25px;
+    font-family: 'Outfit';
+    color: #008DFF;
+}
+
+header .navbar .icon {
+    display: none;
+}
+
+
+.navbar {
+    display: flex;
+    gap: 5.5rem; 
+    padding-right: 31%;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #0287E4;
+    font-size: 20px;
+    font-family: 'Outfit';
+    
+}
+ .navbar a:hover{
+    opacity: 0.5; 
+}
+
+.navbar a.active {
+    color: rgba(2, 135, 228, 0.5);
+}
+
+.active {
+    color: rgba(2, 135, 228, 0.5);
+}
+
+header button {
+    background-color: #0287E4; 
+    color: white; 
+    font-size: 20px; 
+    font-family: 'Outfit'; 
+    border: none; 
+    width: 117px;
+    height: 46px;
+    padding: 0.5rem 1rem; 
+    border-radius: 10px; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+}
+
+header a {
+    text-decoration: none; 
+    color: inherit; 
+}
+
+header button:hover {
+    opacity: 0.5; 
+}
+
+.wrapper {
+    display: flex;
+    margin-left: 90px;
+    align-items: center;
+    gap: 10px; 
+}
+
+.city, .loc-bar, .btn {
+    flex: 1;
+}
+
+.city .dropdown {
+    display: none; 
+}
+
+.custom{
+    height: 45px;
+    width: 160px;
+    background-color: #ffffff;
+    color: #808080;
+    border: none;
+    cursor: pointer;
+    margin-top: 16px;
+}
+
+.select-btn{
+    padding:10px 0;
+    width: 200px;
+    background-color: #ffffff;
+    color: #808080;
+    border: none;
+    border-radius: 19px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+
+.custom:hover, .select-btn:hover{
+    background-color: #6972a5;
+    color: #C3E3FD;
+}
+
+
+.city {
+    display: flex;
+    margin-bottom: 15px;
+    align-items: center;
+    position: relative;
+}
+
+.dropdown{
+    display: none;
+    position: absolute;
+    top: 100%;
+    background-color: #C3E3FD;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px #000;
+    z-index: 1;
+    padding: 12px 16px;
+    border-radius: 8px;
+}
+
+.dropdown label{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10 px;
+}
+
+.dropdown input[type="checkbox"] {
+    width: 18px;
+    height: 15px;
+    border-radius: 80%;
+    padding: 5px;
+    border: 3px solid #7190aa;
+    cursor: pointer;
+    position: relative;
+    order: 2;
+}
+
+.dropdown.show {
+    display: block;
+}
+
+.Home {
+    background-color: #C3E3FD;
+    padding-top: 100px;
+}
+
+.verification-symbol {
+    display: flex;
+    align-items: center;
+    gap: 8px; 
+}
+
+.verification-symbol .symbol {
+    display: inline-block;
+    background-color: #C3E3FD; 
+    border-style: outset;
+    border-color: #0287E4;
+    border-radius: 50%; 
+    color: #0287E4; 
+    padding: 5px; 
+    line-height: 1; 
+}
+
+.loc-bar {
+    flex: 1;
+    margin-right:80px ;
+    display: flex;
+    align-items: center;
+    border-radius: 16px;
+    box-shadow: var(--shadow-4);
+}
+
+.search-loc{
+    border-radius: 16px;
+    border-style: none;
+    flex: 1;
+    position: relative;
+    color: var(--neutral-50);
+    color: #333;
+
+}
+
+
+.search-loc .search-item-field{
+height: 45px;
+width: 700px;
+transition: var(--transition-duration-quick) var(--transition-easing-quick);
+cursor: pointer;
+border: none;
+
+}
+
+.search-loc :where(.label, .material-symbols-rounded){
+position: absolute;
+pointer-events: none;
+border: white;
+border-style: none;
+}
+
+.search-loc .label{
+width: 100%;
+}
+
+.search-loc .material-symbols-rounded{
+    top: 50%;
+    translate: 0 -50%;
+    color: var(--primary-100);
+
+}
+
+
+.search-btn {
+    cursor: pointer;
+    background-color: #938F8F;
+    color:#ffffff;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    padding-inline: 24px;
+    gap: 12px;
+    border: none;
+    transition: var(--transition-duration-quick) var(--transition-easing-quick);
+}
+
+.search-btn:where(:hover, :focus) {
+    background-color: var(--primary-80);
+}
+.search-btn:where(:active, :focus-visible){
+    background-color: var(--primary-70);
+}
+
+
+/*                             START MODAL LOGIN                               */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 3;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 60px;
+    font-family: 'Outfit';
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    align-items: center;
+    border: 2px solid #888;
+    width: 100%;
+    border-radius: 10px;
+    max-width: 552px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 0.5s;
+}
+
+.titlelogin {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    margin-bottom: 15px;
+    font-family: 'Outfit';
+    font-weight: 500;
+    color: #595151;
+    content: 'SayangKeluarga';
+}
+
+.highlight {
+    color: #0287E4;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+form .log-in{
+    display: flex;
+    flex-direction: column;
+}
+
+.modal label {
+    margin-top: 30px;
+    margin-bottom: 18px;
+    font-family: 'Outfit';
+    margin-left: 80px;
+}
+
+.userbox {
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    position: relative;
+}
+
+.userbox input {
+    margin-left: 80px;
+    margin-right: 95px;
+    width: 65%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #595151;
+    border-radius: 10px;
+}
+
+.password-toggle-icon {
+    position: absolute;
+    top: 10px;
+    right: 110px;
+}
+
+.textregister {
+    justify-content: center;
+    display: flex;
+    font-family: 'Outfit';
+    font-size: 15px !important;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.daftar {
+    text-decoration: underline;
+    color: #0287E4;
+}
+
+.masuk {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #0287E4;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 200px;
+    border-radius: 10px;
+    margin-left: 176px;
+}
+
+.masuk:hover {
+    background-color: rgba(0, 34, 136, 1);
+    opacity: 50%;
+}
+
+/*                             END MODAL LOGIN                               */
+
+.daftar2 button, .masuk button {
+    background-color: #0287E4;
+    color: white;
+    font-size: 20px;
+    font-family: 'Outfit';
+    border: none;
+    width: 117px;
+    height: 46px;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+/*                             START MODAL REGISTER                               */
+
+.registbutton {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+    /* Optionally, you can reset other styles like font, color, etc. */
+    font-family: 'Outfit';
+    font-size: 15px;
+    color: inherit;
+    /* Resetting cursor to default */
+    cursor: auto;
+    width: 200px;
+}
+
+.modal2 {
+    display: none;
+    position: fixed;
+    z-index: 3;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 60px;
+    font-family: 'Outfit';
+}
+
+.modal2-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    align-items: center;
+    border: 2px solid #888;
+    width: 100%;
+    border-radius: 10px;
+    max-width: 552px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 0.5s;
+}
+
+.namabox {
+    margin-top: 10px;
+    width: fit-content;
+    display: inline-flex;
+}
+
+.namabox a {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.namabox input {
+    margin-left: 40px;
+    width: 350px;
+    padding: 8px;
+    font-size: 16px;
+    border: 2px solid #D9D9D9;
+    border-radius: 10px;
+}
+
+
+.genderbox {
+    margin-top: 15px;
+    width: fit-content;
+    display: inline-flex;
+}
+
+.genderbox a {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.genderbox select {
+    margin-left: 52px;
+    width: 120px;
+    padding: 8px;
+    font-size: 16px;
+    border: 2px solid #D9D9D9;
+    border-radius: 10px;
+}
+
+
+.datebox {
+    margin-top: 15px;
+    width: fit-content;
+    display: inline-flex;
+}
+
+.datebox a {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.datebox input {
+    margin-left: 50px;
+    width: 150px;
+    padding: 8px;
+    font-size: 16px;
+    border: 2px solid #D9D9D9;
+    border-radius: 10px;
+}
+
+.nikbox {
+    margin-top: 15px;
+    width: fit-content;
+    display: inline-flex;
+}
+
+.nikbox a {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.nikbox input {
+    margin-left: 120px;
+    width: 350px;
+    padding: 8px;
+    font-size: 16px;
+    border: 2px solid #D9D9D9;
+    border-radius: 10px;
+}
+
+.kotakabupatenbox {
+    margin-top: 15px;
+    width: fit-content;
+    display: inline-flex;
+}
+
+.kotakabupatenbox a {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.kotakabupatenbox input {
+    margin-left: 28px;
+    width: 350px;
+    padding: 8px;
+    font-size: 16px;
+    border: 2px solid #D9D9D9;
+    border-radius: 10px;
+}
+
+.alamatbox {
+    margin-top: 10px;
+    width: fit-content;
+    display: inline-flex;
+    margin-bottom: 10px;
+}
+
+.alamatbox a {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.alamatbox input {
+    margin-left: 92px;
+    width: 350px;
+    padding: 8px;
+    font-size: 16px;
+    border: 2px solid #D9D9D9;
+    border-radius: 10px;
+}
+
+.linedivider {
+    border-bottom: 2px solid #D9D9D9;
+    width: 512px;
+    margin-left: 10px;
+}
+
+.emailbox {
+    margin-top: 10px;
+    width: fit-content;
+    display: inline-flex;
+}
+
+.emailbox a {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.emailbox input {
+    margin-left: 105px;
+    width: 350px;
+    padding: 8px;
+    font-size: 16px;
+    border: 2px solid #D9D9D9;
+    border-radius: 10px;
+}
+
+
+.numberbox {
+    margin-top: 10px;
+    width: fit-content;
+    display: inline-flex;
+}
+
+.numberbox a {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.numberbox input {
+    margin-left: 37px;
+    width: 350px;
+    padding: 8px;
+    font-size: 16px;
+    border: 2px solid #D9D9D9;
+    border-radius: 10px;
+}
+
+.passwordbox {
+    margin-top: 10px;
+    width: fit-content;
+    display: inline-flex;
+    margin-bottom: 50px;
+}
+
+.passwordbox a {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.passwordbox input {
+    margin-left: 30px;
+    width: 350px;
+    padding: 8px;
+    font-size: 16px;
+    border: 2px solid #D9D9D9;
+    border-radius: 10px;
+}
+
+.textlogin {
+    justify-content: center;
+    display: flex;
+    font-family: 'Outfit';
+    font-size: 15px !important;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.logintext {
+    text-decoration: underline;
+    color: #0287E4;
+}
+
+
+.titleregister {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    font-family: 'Outfit';
+    font-weight: 500;
+    color: #595151;
+    content: 'SayangKeluarga';
+    margin-bottom: 20px;
+}
+
+.daftar2 {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #0287E4;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 200px;
+    border-radius: 10px;
+    margin-left: 176px;
+    text-decoration: none;
+}
+
+.daftar2:hover {
+    background-color: rgba(0, 34, 136, 1);
+    opacity: 50%;
+}
+
+/*                             END MODAL REGISTER                               */
+
+.card {
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+
+
+.yayasan-menu h1{
+    text-align: left;
+    margin-top: 2%;
+    margin-bottom: 5%;
+}
+
+.box1 a {
+    text-decoration: none; 
+    color: inherit; 
+}
+
+.box1 a:hover {
+    text-decoration: none; 
+    color: inherit; 
+}
+
+.yayasan-menu .box-container1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+    gap: 1rem;
+    
+}
+
+.yayasan-menu .box-container1 .box1 {
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    max-width: 400px;
+    
+}
+
+.yayasan-menu .box-container1 .box1 img {
+      width: 141.54px;
+    height: 141.54px; 
+
+
+
+    align-items: center;
+    text-align: center;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.buttons-container, .buttons-container1 {
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+ 
+}
+
+.rating-location-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rating {
+    margin-right: auto;
+}
+
+.material-icons {
+    margin-left: auto; 
+}
+
+.buttons-container button{
+    background-color: #0287E4; 
+    color: white; 
+    font-family: 'Outfit'; 
+    border: none; 
+    padding: 0.3rem 1rem; 
+    border-radius: 10px; 
+    
+    
+}
+
+.buttons-container1 button{
+    background-color: #FF00C7; 
+    color: white; 
+    font-family: 'Outfit'; 
+    border: none; 
+    padding: 0.3rem 1rem; 
+    border-radius: 10px; 
+    
+}
+
+.rating-location-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.rating-location-container .rating {
+    font-size: 1.2rem;
+}
+
+.rating-location-container .material-icons {
+    font-size: 1.2rem;
+}
+
+.rating-location-container .location {
+    color: #333;
+    font-size: 1.2rem;
+}
+
+.footer {
+    font-family: 'Outfit';
+    position: relative;
+    background-color: #008DFF;
+    height: 400px;
+    color: #fff;
+    font-size: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.desc {
+    display: block;
+    margin-left: 70px;
+    margin-top: 40px;
+}
+
+.desc a {
+    font-size: 25px !important;
+    font-weight: bold;
+}
+
+.desc .text {
+    width: 400px;
+    margin-top: 36px !important;
+    font-size: 20px;
+}
+
+.explore {
+    margin-top: 40px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.explore a{
+    color: #fff;
+    text-decoration: none;  
+  }
+
+
+.footerLink {
+    display: block;
+    margin-top: 25px;
+}
+
+.linkcontent {
+    display: block;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.layanankami {
+    margin-top: 40px;
+}
+
+.layanankami a {
+    font-size: 25px !important;
+    font-weight: bold;
+}
+
+.layanankamicontent {
+    margin-top: 25px;
+}
+
+.layanankami .info {
+    display: block;
+    font-size: 20px;
+}
+
+.kontak {
+    margin-top: 40px;
+    margin-right: 70px;
+}
+
+.kontak a {
+    font-size: 25px !important;
+    font-weight: bold;
+}
+
+.mail {
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.isikontak {
+    display: flex;
+    justify-content: space-between;
+    font-weight: normal;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.copyright {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    font-size: 15px;
+}
+
+.imgcopyr {
+    position: absolute;
+    bottom: 60px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+/* media queries */
+
+@media(max-width:991px){
+
+    html{
+        font-size: 55%;
+
+    }
+    header{
+        padding: 1rem 2rem;
+    }
+
+    section{
+        padding: 2rem;
+    }
+
+   
+}
+
+@media(max-width:768px){
+
+    header .icons #bars{
+        display: inline-block;
+    }
+
+    header .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #fff;
+        border-top: .1rem solid rgba(0,0,0,.2);
+        border-bottom: .1rem solid rgba(0,0,0,.2);
+        padding: 1rem;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    header .navbar a{
+        display: block;
+        padding: 1.5rem;
+        margin: 1rem;
+        font-size: 2rem;
+        background: #eee;
+    }
+}
+
+
+@media(max-width:991px){
+
+    html{font-size: 50%;
+
+    }
+   
+
+   
+}

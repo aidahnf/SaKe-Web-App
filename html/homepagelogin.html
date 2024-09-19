@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/style/homepagelogin.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- biar ada icon menu and search -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/script/script.js">
+
+    <title>Sayang Keluarga</title>
+</head>
+
+<body>
+    <header>
+        <a class="logo">SaKe</a>
+        <div class="navbar" id="myNav">
+            <a href="#beranda" class="active">Beranda</a>
+            <a href="Yayasan.html" class="menu">Yayasan</a>
+            <a href="#tentangkami" class="menu">Tentang Kami</a>
+            <a href="" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    
+            <div class = "profile">
+                <img src="/images/notes.png" class="icon">
+                <div class="text">
+                    <button><a href="aktivitas.html">Aktivitas saya</a></button>
+                </div>
+                <a href="Prof.html">
+                    <img src="/images/icon.jpg" class="account">
+                </a>
+            </div>
+
+
+        <!-- <div class="icons">
+            <i class="fas fa-bars" id="bars"></i>
+
+        </div> -->
+    </header>
+
+    <div class="content">
+        <div class="banner">
+            <section class="swipecontent">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="/images/Rectangle 3.png" alt=""></div>
+                        <div class="swiper-slide"><img src="/images/orangsakit.png" alt=""></div>
+                        <div class="swiper-slide"><img src="/images/semimedis.png" alt=""></div>
+                        <div class="swiper-slide"><img src="/images/lansiaindex.png" alt=""></div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+
+            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+            <script>
+                var swiper = new Swiper(".mySwiper", {
+                    cssMode: true,
+                    navigation: {
+                        nextEl: ".swiper-button-next",
+                        prevEl: ".swiper-button-prev",
+                    },
+                    pagination: {
+                        el: ".swiper-pagination",
+                    },
+                    mousewheel: true,
+                    keyboard: true,
+                });
+            </script>
+        </div>
+
+        <div class="yayasan">
+            <div class="yayasantext">
+                <div class="yayasantextcontent">
+                    <a>Temukan Yayasan Terpercaya di Sake!</a><br>
+                    Anda akan mendapatkan akses ke pelayanan dari yayasan perawat yang terbaik di Indonesia. Kami telah
+                    menjalin kerjasama dengan yayasan-yayasan yang terkemuka dan terpercaya, memastikan bahwa setiap
+                    klien mendapatkan perawatan yang berkualitas tinggi.
+                </div>
+                <img src="/images/nanny1.png" alt="">
+            </div>
+            <div class="yayasancontent">
+                <div class="ycontent1">
+                    <img id="logo1" src="/images/insanmedika.jpg" alt="">
+                    <div class="yc1text">
+                        <div class="yc1text1">Insan Medika</div>
+                        <div class="yc1text2"> Pengasuh Lansia </div>
+                        <div class="yc1info">
+                            <div class="rating1">
+                                <img src="/images/Vector.png" alt="">
+                                <a>4.7</a>
+                            </div>
+                            <div class="lokasi1">
+                                <img src="/images/vectorrr.png" alt="">
+                                <a>Jakarta Selatan</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ycontent1">
+                    <img id="logo2" src="/images/Capten-Care-Logo-Low-px.jpg" alt="">
+                    <div class="yc1text">
+                        <div class="yc1text1">Capten Care</div>
+                        <div class="yc1text2"> Pengasuh Lansia </div>
+                        <div class="yc1info">
+                            <div class="rating1">
+                                <img src="/images/Vector.png" alt="">
+                                <a>4.2</a>
+                            </div>
+                            <div class="lokasi1">
+                                <img src="/images/vectorrr.png" alt="">
+                                <a>Jakarta Selatan</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ycontent1">
+                    <img id="logo3" src="/images/new-logo.png" alt="">
+                    <div class="yc1text">
+                        <div class="yc1text1">Nanny Care</div>
+                        <div class="yc3text2"> Pengasuh Anak </div>
+                        <div class="yc1info">
+                            <div class="rating1">
+                                <img src="/images/Vector.png" alt="">
+                                <a>4.9</a>
+                            </div>
+                            <div class="lokasi1">
+                                <img src="/images/vectorrr.png" alt="">
+                                <a>Bogor</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="yayasanmelihat">
+                <form action="Yayasan.html">
+                    <button type="submit">Melihat selengkapnya</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="tentangkami">
+            <div class="headertentangkami">Mengapa Memilih Kami ?</div>
+            <div class="tentangkamicontent">
+                <div class="content1">
+                    <img src="/images/contract_icon-removebg-preview.png" alt="">
+                    <div class="textcontent1">Memiliki sistem kontrak yang menjamin kesepakatan sah antara Yayasan dan
+                        Klien</div>
+                </div>
+                <div class="content1">
+                    <img src="/images/trophy-removebg-preview.png" alt="">
+                    <div class="textcontent1">Kerjasama dengan Yayasan-Yayasan Terkemuka di Indonesia yang Diakui dan
+                        Terpercaya</div>
+                </div>
+                <div class="content1">
+                    <img src="/images/document-removebg-preview.png" alt="">
+                    <div class="textcontent1">Menyediakan informasi lengkap mengenai Yayasan, memudahkan Anda dalam
+                        memilih dengan bijaksana</div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <div class="desc"><a>Sayang Keluarga</a>
+            <div class="text">Melalui platform kami, Anda dapat menemukan informasi lengkap mengenai setiap yayasan,
+                termasuk reputasi, layanan yang disediakan, dan ulasan dari klien sebelumnya.</div>
+        </div>
+        <div class="explore"><a>Explore</a>
+            <div class="footerLink">
+                <a class="linkcontent" href="homepagelogin.html">Beranda</a>
+                <a class="linkcontent" href="Yayasan.html">Yayasan</a>
+                <a class="linkcontent" href="">Tentang Kami</a>
+            </div>
+        </div>
+        <div class="layanankami"><a>Layanan Kami</a>
+            <div class="layanankamicontent">
+                <div class="info">Perawat Lansia</div>
+                <div class="info">Pengasuh Anak</div>
+            </div>
+        </div>
+        <div class="kontak"><a>Kontak</a>
+            <div class="isikontak">
+                <img src="/images/mail.png" alt="" class="mail">
+                <div class="gmail" href="contact@sayangkeluarga@gmail.com">contact@sayangkeluarga@gmail.com</div>
+            </div>
+        </div>
+        <div class="copyright">
+            <img class="imgcopyr" src="/images/Line 2.png" alt="">
+            <a class="copyr">©2024</a>
+            <a class="copyr">Terms of Service</a>
+            <a class="copyr">Privacy Policy</a>
+        </div>
+    </div>
+</body>

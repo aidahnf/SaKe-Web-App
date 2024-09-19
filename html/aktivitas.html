@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/aktivitas.css">  
+    <title>SayangKeluarga</title>
+    <style>
+        body{
+            background-color: white; 
+        }
+    </style>
+</head>
+<body>
+    <!-- toolbar section starts -->
+    <header>
+        <a class="logo">SaKe</a>
+        <nav class = "navbar">
+            <a href = "homepagelogin.html">Beranda</a>
+            <a href = "InsanMedika.html">Yayasan</a>
+            <a href = "#tentangkami">Tentang Kami</a>
+        </nav> 
+        
+        
+        <div class = "profile">
+            <img src="/images/notes.png" class="icon">
+            <div class="text">Aktivitas saya</div>
+        </div>
+        <a href="Prof.html">
+            <img src="/images/icon.jpg" class="account">
+        </a>
+    </header>
+
+
+    <section>
+        <div class="title">Kontrak Saya</div>
+        <button id="buttonTambah">
+            <a href="#tambah"\>Tambahkan Kontrak</a>
+        </button>  
+        <div class="kontrak1">
+            <img src="/images/insanmedika.jpg" alt="logoInsan" class="dis">
+            <div class="nama">
+                <a>Insan Medika</a>
+            </div>
+            <a class="tanggal">Kontrak dibuat pada tanggal 20 Maret 2024</a>
+            <a class="kota">Jakarta Selatan</a>
+            <div class="tag1">
+                 <a>Pengasuh Lansia</a>
+            </div>
+            <div class="durasi">
+                <a>Kontrak 6 bulan</a>
+            </div>
+            <div class="status">
+                <a>BUKTI KONTRAK SUDAH TERVERIFIKASI</a>
+           </div>
+           <img src="/images/check.png" alt="logoCheck" class="dis2">
+           <button class="buttonLapor">
+                <a href="#lapor"\>LAPOR MASALAH</a>
+            </button>  
+        </div>
+
+        <div class="kontrak2">
+            <img src="/images/Capten-Care-Logo-Low-px.jpg" alt="logoInsan" class="dis">
+            <div class="nama">
+                <a>Capten Care</a>
+            </div>
+            <a class="tanggal">Kontrak dibuat pada tanggal 24 Maret 2024</a>
+            <a class="kota">Jakarta Barat</a>
+            <div class="tag1">
+                 <a>Pengasuh Lansia</a>
+            </div>
+            <div class="durasi">
+                <a>Kontrak 12 bulan</a>
+            </div>
+            <div class="status">
+                <a>KONTRAK DIBATALKAN</a>
+           </div>
+           <button class="button">
+                <a href="#ulasan"\>Beri Ulasan</a>
+            </button>  
+            <button class="button2">
+                <a href="#buatkontrak"\>Buat Kontrak lagi</a>
+            </button>  
+        </div>
+
+        <!-- <div class="kontrak3">
+            <img src="/images/new-logo.png" alt="logoInsan" class="dis">
+            <div class="nama">
+                <a>Nanny Care</a>
+            </div>
+            <a class="tanggal">Kontrak dibuat pada tanggal 24 Maret 2024</a>
+            <a class="kota">Jakarta Selatan</a>
+            <div class="tag1">
+                 <a>Pengasuh Anak</a>
+            </div>
+            <div class="durasi">
+                <a>Kontrak 12 bulan</a>
+            </div>
+            <div class="status">
+                <a>KONTRAK DALAM PROSES VERIFIKASI</a>
+           </div>
+           <button class="button">
+                <a href="#ulasan"\>Batalkan Kontrak</a>
+            </button>    
+        </div> -->
+
+        <div class="kontrak4">
+            <img src="/images/Capten-Care-Logo-Low-px.jpg" alt="logoInsan" class="dis">
+            <div class="nama">
+                <a>Capten Care</a>
+            </div>
+            <a class="tanggal">Kontrak dibuat pada tanggal 24 Maret 2024</a>
+            <a class="kota">Jakarta Barat</a>
+            <div class="tag1">
+                 <a>Pengasuh Lansia</a>
+            </div>
+            <div class="durasi">
+                <a>Kontrak 12 bulan</a>
+            </div>
+            <div class="status">
+                <a>MASA KONTRAK SUDAH BERAKHIR</a>
+           </div>
+           <img src="/images/check.png" alt="logoCheck" class="dis2">
+           <button class="button">
+                <a href="#ulasan"\>Beri Ulasan</a>
+            </button>  
+            <button class="button2">
+                <a href="#buatkontrak"\>Buat Kontrak lagi</a>
+            </button>  
+        </div>
+    </section>
+
+    <div id="registerModal" class="modal2">
+        <div class="modal2-content">
+            <span class="close">&times;</span>
+            <a class="titleregister">
+                Tambahkan&nbsp;<span class="highlight">Kontrak</span>
+            </a>
+            <form>
+                <div class="namabox">
+                    <a>Nama Yayasan</a>
+                    <input type="text" id="uname" name="uname" required>
+                </div>
+
+                <div class="datebox">
+                    <a>Tanggal Lahir</a>
+                    <input type="date" id="date" name="date">
+                </div>
+
+                <div class="genderbox">
+                    <a>Jenis Pengasuh</a>
+                    <select id="gender" name="gender">
+                        <option value="laki-laki">Anak</option>
+                        <option value="perempuan">Lansia</option>
+                    </select>
+                </div>
+
+                <div class="durasiKontrak">
+                    <a>Durasi Kontrak</a>
+                    <select id="durasi" name="durasi">
+                        <option value="3 bulan">3 bulan</option>
+                        <option value="6 bulan">6 bulan</option>
+                        <option value="12 bulan">12 bulan</option>
+                    </select>
+                </div>
+                <a href="akivitasAfter.html" class="daftar2">Tambahkan</a>
+                <img src="/images/upload.png" id="tandaDoang" class="uploadPhoto">
+                <div class="upload">
+                    <a>Unggah kontrak</a>
+                </div>
+                <label for="input-file">Pilih gambar</label>
+                <input type="file" accept="image/jpeg, image/png, image/jpg" id="input-file">
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer">
+            <div class="desc"><a>Sayang Keluarga</a>
+                <div class="text">Melalui platform kami, Anda dapat menemukan informasi lengkap mengenai setiap yayasan,
+                    termasuk reputasi, layanan yang disediakan, dan ulasan dari klien sebelumnya.</div>
+            </div>
+            <div class="explore"><a>Explore</a>
+                <div class="footerLink">
+                    <a class="linkcontent" href="homepage.html">Beranda</a>
+                    <a class="linkcontent" href="YayasanLogin.html">Yayasan</a>
+                    <a class="linkcontent" href="">Tentang Kami</a>
+                </div>
+            </div>
+            <div class="layanankami"><a>Layanan Kami</a>
+                <div class="layanankamicontent">
+                    <div class="info">Perawat Lansia</div>
+                    <div class="info">Pengasuh Anak</div>
+                </div>
+            </div>
+            <div class="kontak"><a>Kontak</a>
+                <div class="isikontak">
+                    <img src="/images/mail.png" alt="" class="mail">
+                    <div class="gmail" href="contact@sayangkeluarga@gmail.com">contact@sayangkeluarga@gmail.com</div>
+                </div>
+            </div>
+            <div class="copyright">
+                <img class="imgcopyr" src="/images/Line 2.png" alt="">
+                <a class="copyr">©2024</a>
+                <a class="copyr">Terms of Service</a>
+                <a class="copyr">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+
+    
+
+    <script src="/script/scriptAktivitas.js"></script>
+</body>
